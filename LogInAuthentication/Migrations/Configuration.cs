@@ -53,7 +53,7 @@ namespace LogInAuthentication.Migrations
                     Email = "kvnmach@gmail.com",
                     UserName = "kvnmach@gmail.com"
                 };
-                managerRole.Create(user, "passcode");
+                managerRole.Create(user, "Passcode!1");
                 managerRole.AddToRole(user.Id, "Admin");
 
                 var user2 = new ApplicationUser
@@ -65,7 +65,7 @@ namespace LogInAuthentication.Migrations
                     Email = "kvnmach@gmail.com",
                     UserName = "kvnmach@gmail.com"
                 };
-                managerRole.Create(user, "passcode");
+                managerRole.Create(user, "Passcode!1");
                 managerRole.AddToRole(user.Id, "Dev");
 
                 var user3 = new ApplicationUser
@@ -77,7 +77,7 @@ namespace LogInAuthentication.Migrations
                     Email = "kvnmach@gmail.com",
                     UserName = "kvnmach@gmail.com"
                 };
-                managerRole.Create(user, "passcode");
+                managerRole.Create(user, "Passcode!1");
                 managerRole.AddToRole(user.Id, "Dev");
 
                 var user4 = new ApplicationUser
@@ -89,7 +89,7 @@ namespace LogInAuthentication.Migrations
                     Email = "kvnmach@gmail.com",
                     UserName = "kvnmach@gmail.com"
                 };
-                managerRole.Create(user, "passcode");
+                managerRole.Create(user, "Passcode!1");
                 managerRole.AddToRole(user.Id, "Dev");
             }
         }
