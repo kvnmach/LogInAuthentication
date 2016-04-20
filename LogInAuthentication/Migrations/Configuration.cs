@@ -48,7 +48,7 @@ namespace LogInAuthentication.Migrations
                 {
                     FirstName = "Kevin",
                     LastName = "Mach",
-                    DateOfBirth = DateTime.Parse("10/10/1000"),
+                    DateOfBirth = DateTime.Parse("10/10/1990"),
                     Hello = "Hello",
                     Email = "kvnmach@gmail.com",
                     UserName = "kvnmach@gmail.com"
@@ -56,6 +56,41 @@ namespace LogInAuthentication.Migrations
                 managerRole.Create(user, "passcode");
                 managerRole.AddToRole(user.Id, "Admin");
 
+                var user2 = new ApplicationUser
+                {
+                    FirstName = "Kevin",
+                    LastName = "Mach",
+                    DateOfBirth = DateTime.Parse("10/10/1990"),
+                    Hello = "Hello",
+                    Email = "kvnmach@gmail.com",
+                    UserName = "kvnmach@gmail.com"
+                };
+                managerRole.Create(user, "passcode");
+                managerRole.AddToRole(user.Id, "Dev");
+
+                var user3 = new ApplicationUser
+                {
+                    FirstName = "Kevin",
+                    LastName = "Mach",
+                    DateOfBirth = DateTime.Parse("10/10/1990"),
+                    Hello = "Hello",
+                    Email = "kvnmach@gmail.com",
+                    UserName = "kvnmach@gmail.com"
+                };
+                managerRole.Create(user, "passcode");
+                managerRole.AddToRole(user.Id, "Dev");
+
+                var user4 = new ApplicationUser
+                {
+                    FirstName = "Kevin",
+                    LastName = "Mach",
+                    DateOfBirth = DateTime.Parse("10/10/1990"),
+                    Hello = "Hello",
+                    Email = "kvnmach@gmail.com",
+                    UserName = "kvnmach@gmail.com"
+                };
+                managerRole.Create(user, "passcode");
+                managerRole.AddToRole(user.Id, "Dev");
             }
         }
     }
