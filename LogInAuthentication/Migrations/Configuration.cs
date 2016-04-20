@@ -56,5 +56,6 @@ namespace LogInAuthentication.Migrations
                 managerRole.AddToRole(user.Id, "Admin");
 
             }
+        }
     }
 }
