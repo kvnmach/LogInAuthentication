@@ -47,8 +47,9 @@ namespace LogInAuthentication.Migrations
                 var user = new ApplicationUser
                 {
                     FirstName = "Kevin",
-                    LastName = "Satsey",
+                    LastName = "Mach",
                     DateOfBirth = DateTime.Parse("10/10/1000"),
+                    Hello = "Hello",
                     Email = "kvnmach@gmail.com",
                     UserName = "kvnmach@gmail.com"
                 };

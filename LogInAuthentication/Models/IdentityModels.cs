@@ -13,6 +13,7 @@ namespace LogInAuthentication.Models
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Hello { get; set; }
+        
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
