@@ -39,7 +39,7 @@ namespace LogInAuthentication.Migrations
             {
                 managerJob.Create(new IdentityRole("Admin"));
                 managerJob.Create(new IdentityRole("Developer"));
-                managerJob.Create(new IdentityRole("Secretary"));
+                managerJob.Create(new IdentityRole("DataAdmin"));
             }
 
             if (!context.Users.Any(x => x.UserName == "kvnmach@gmail.com"))
@@ -66,7 +66,7 @@ namespace LogInAuthentication.Migrations
                     UserName = "kvnmach@gmail.com"
                 };
                 managerRole.Create(user, "Passcode!1");
-                managerRole.AddToRole(user.Id, "Dev");
+                managerRole.AddToRole(user.Id, "DataAdmin");
 
                 var user3 = new ApplicationUser
                 {
